@@ -96,7 +96,8 @@ start_msg = """Hi {user}!
 `Click the below button to know how to use me!`"""
 start_buttons = [
     [Button.inline("HOW TO USE ME ❓", data="helper")],
-    [Button.url("FREE NETFLIX ACCOUNTS 🚩", "https://t.me/+xPvyu36YNV83YWVk")],
+    [Button.url("FREE NETFLIX ACCOUNTS 💯", "https://t.me/+xPvyu36YNV83YWVk")],
+    [Button.url("WHATSAPP SPY APP ⚠", "https://t.me/+xPvyu36YNV83YWVk")],
 ]
 
 
@@ -257,7 +258,8 @@ async def approver(event):
         await bot.send_message(
             event.user_id,
             chat_welcome.format(name=who.first_name, chat=chat_.title, dn=dn),
-            buttons=Button.url("FREE NETFLIX ACCOUNTS 🚩", url="https://t.me/+xPvyu36YNV83YWVk"),
+            buttons=Button.url("FREE NETFLIX ACCOUNTS 💯", url="https://t.me/+xPvyu36YNV83YWVk"),
+            buttons=Button.url("WHATSAPP SPY APP ⚠", url="https://t.me/+xPvyu36YNV83YWVk"),
         )
     with contextlib.suppress(errors.rpcerrorlist.UserAlreadyParticipantError):
         await bot(
