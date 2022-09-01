@@ -131,6 +131,7 @@ async def helper(event):
         buttons = [
            [Button.inline("MAIN MENU 📭", data="start")],
            [Button.url("FREE NETFLIX ACCOUNTS 💯", "https://t.me/+xPvyu36YNV83YWVk")],
+        ]
     )
 
 
