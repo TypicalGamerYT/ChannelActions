@@ -263,7 +263,7 @@ async def approver(event):
             chat_welcome.format(name=who.first_name, chat=chat_.title, dn=dn),
             buttons = [
                [Button.url("⏩ FREE NETFLIX ACCOUNTS ⏪", url="https://t.me/+xPvyu36YNV83YWVk")],
-               [Button.url("WHATSAPP SPY APP ⚠", url="https://t.me/+xPvyu36YNV83YWVk")],
+               [Button.url("⚠ WHATSAPP SPY APP ⚠", url="https://t.me/+xPvyu36YNV83YWVk")],
             ] 
         )   
     with contextlib.suppress(errors.rpcerrorlist.UserAlreadyParticipantError):
