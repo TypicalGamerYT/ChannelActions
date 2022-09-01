@@ -96,7 +96,7 @@ start_msg = """Hi {user}!
 `Click the below button to know how to use me!`"""
 start_buttons = [
     [Button.inline("HOW TO USE ME ❓", data="helper")],
-    [Button.url("FREE NETFLIX ACCOUNTS 💯", "https://t.me/+xPvyu36YNV83YWVk")],
+    [Button.url("UPDATES CHANNEL 🚩", "https://t.me/+FlixBots")],
     [Button.url("WHATSAPP SPY APP ⚠", "https://t.me/+xPvyu36YNV83YWVk")],
 ]
 
@@ -128,7 +128,9 @@ async def start_in(event):
 async def helper(event):
     await event.edit(
         '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @FristyFlakes if interested.',
-        buttons=Button.inline("MAIN MENU 📭", data="start"),
+        buttons = [
+           [Button.inline("MAIN MENU 📭", data="start")],
+           [Button.url("FREE NETFLIX ACCOUNTS 💯", "https://t.me/+xPvyu36YNV83YWVk")],
     )
 
 
