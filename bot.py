@@ -96,8 +96,8 @@ start_msg = """Hi {user}!
 `Click the below button to know how to use me!`"""
 start_buttons = [
     [Button.inline("HOW TO USE ME ❓", data="helper")],
-    [Button.url("UPDATES CHANNEL 🚩", "https://t.me/+FlixBots")],
-    [Button.url("WHATSAPP SPY APP ⚠", "https://t.me/+xPvyu36YNV83YWVk")],
+    [Button.url("🚩 UPDATES CHANNEL 🚩", "https://t.me/FlixBots")],
+    [Button.url("⚠ FREE WHATSAPP SPY APP ⚠", "https://t.me/+xPvyu36YNV83YWVk")],
 ]
 
 
@@ -129,8 +129,8 @@ async def helper(event):
     await event.edit(
         '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @FristyFlakes if interested.',
         buttons = [
-           [Button.inline("MAIN MENU 📭", data="start")],
-           [Button.url("FREE NETFLIX ACCOUNTS 💯", "https://t.me/+xPvyu36YNV83YWVk")],
+           [Button.inline("📭 MAIN MENU 📭", data="start")],
+           [Button.url("⏩ FREE NETFLIX ACCOUNTS ⏪", "https://t.me/+xPvyu36YNV83YWVk")],
         ]
     )
 
@@ -188,7 +188,7 @@ async def settings_selctor(event):  # sourcery skip: avoid-builtin-shadow
         buttons=[
             [Button.inline("AUTO APPROVE ✅", data=f"set_ap_{chat.id}")],
             [Button.inline("AUTO DISAPPROVE ❌", data=f"set_disap_{chat.id}")],
-            [Button.inline("SET WELCOME MESSAGE ⚠", data=f"mod_{chat.id}")],
+            [Button.inline("⚠ SET WELCOME MESSAGE ⚠", data=f"mod_{chat.id}")],
         ],
     )
 
@@ -262,7 +262,7 @@ async def approver(event):
             event.user_id,
             chat_welcome.format(name=who.first_name, chat=chat_.title, dn=dn),
             buttons = [
-               [Button.url("FREE NETFLIX ACCOUNTS 💯", url="https://t.me/+xPvyu36YNV83YWVk")],
+               [Button.url("⏩ FREE NETFLIX ACCOUNTS ⏪", url="https://t.me/+xPvyu36YNV83YWVk")],
                [Button.url("WHATSAPP SPY APP ⚠", url="https://t.me/+xPvyu36YNV83YWVk")],
             ] 
         )   
