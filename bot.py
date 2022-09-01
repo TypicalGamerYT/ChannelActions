@@ -87,16 +87,16 @@ async def get_me():
 bot_username = bot.loop.run_until_complete(get_me())
 start_msg = """Hi {user}!
 
-**I'm Channel Actions Bot, a bot mainly focused on working with the new [admin approval invite links](https://t.me/telegram/153).**
+**I'm An Approve Members Bot, a bot mainly focused on working with the new [Admin Appproval Invite Links](https://t.me/telegram/153).**
 
 **__I can__**:
-- __Auto approve new join requests.__
+- __Auto Approve New Join Requests.__
 - __Auto Decline New Join Requests.__
 
 `Click the below button to know how to use me!`"""
 start_buttons = [
-    [Button.inline("How to use me ❓", data="helper")],
-    [Button.url("Updates", "https://t.me/BotzHub")],
+    [Button.inline("HOW TO USE ME ❓", data="helper")],
+    [Button.url("UPDATES CHANNEL", "https://t.me/+xPvyu36YNV83YWVk")],
 ]
 
 
@@ -126,8 +126,8 @@ async def start_in(event):
 @bot.on(events.CallbackQuery(data="helper"))
 async def helper(event):
     await event.edit(
-        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @xditya_bot if interested.',
-        buttons=Button.inline("Main Menu 📭", data="start"),
+        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @FristyFlakes if interested.',
+        buttons=Button.inline("MAIN MENU 📭", data="start"),
     )
 
 
@@ -182,9 +182,9 @@ async def settings_selctor(event):  # sourcery skip: avoid-builtin-shadow
             title=chat.title, set=setting, is_modded=is_modded
         ),
         buttons=[
-            [Button.inline("Auto-Approve", data=f"set_ap_{chat.id}")],
-            [Button.inline("Auto-Disapprove", data=f"set_disap_{chat.id}")],
-            [Button.inline("Set Welcome Message", data=f"mod_{chat.id}")],
+            [Button.inline("AUTO APPROVE ✅", data=f"set_ap_{chat.id}")],
+            [Button.inline("AUTO DISAPPROVE ❌", data=f"set_disap_{chat.id}")],
+            [Button.inline("SET WELCOME MESSAGE ⚠", data=f"mod_{chat.id}")],
         ],
     )
 
@@ -240,7 +240,7 @@ async def approver(event):
         welcome_msg.get(chat)
         or "Hello {name}, your request to join {chat} has been {dn}"
     )
-    chat_welcome += "\nSend /start to know more."  # \n\n__**Powered by @BotzHub**__"
+    chat_welcome += "\nSend /start to know more."  # \n\n__**Powered by @Flixbots**__"
     who = await bot.get_entity(event.user_id)
     chat_ = await bot.get_entity(chat)
     dn = "approved!"
@@ -257,7 +257,7 @@ async def approver(event):
         await bot.send_message(
             event.user_id,
             chat_welcome.format(name=who.first_name, chat=chat_.title, dn=dn),
-            buttons=Button.url("Updates", url="https://t.me/BotzHub"),
+            buttons=Button.url("UPDATES 🚩", url="https://t.me/+xPvyu36YNV83YWVk"),
         )
     with contextlib.suppress(errors.rpcerrorlist.UserAlreadyParticipantError):
         await bot(
@@ -305,6 +305,6 @@ async def broad(e):
 
 
 log.info("Started Bot - %s", bot_username)
-log.info("\n@BotzHub\n\nBy - @xditya.")
+log.info("\n@FlixBots\n\nBy - @FristyFlakes.")
 
 bot.run_until_disconnected()
