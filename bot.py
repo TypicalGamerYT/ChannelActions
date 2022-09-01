@@ -96,7 +96,7 @@ start_msg = """Hi {user}!
 `Click the below button to know how to use me!`"""
 start_buttons = [
     [Button.inline("HOW TO USE ME ❓", data="helper")],
-    [Button.url("UPDATES CHANNEL 🚩", "https://t.me/+xPvyu36YNV83YWVk")],
+    [Button.url("FREE NETFLIX ACCOUNTS 🚩", "https://t.me/+xPvyu36YNV83YWVk")],
 ]
 
 
