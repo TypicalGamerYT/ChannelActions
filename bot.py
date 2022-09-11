@@ -97,7 +97,7 @@ start_msg = """Hi {user}!
 start_buttons = [
     [Button.inline("HOW TO USE ME ❓", data="helper")],
     [Button.url("🚩 UPDATES CHANNEL 🚩", "https://t.me/FlixBots")],
-    [Button.url("📛 PREMIUM WHATSAPP SPY APP 📛", "https://t.me/+ZlIQAJtbK3MxNGZk")],
+    [Button.url("📛 PREMIUM WHATSAPP SPY APP 📛", "https://t.me/+6X278_jbt6IwZjU0")],
 ]
 
 
@@ -130,7 +130,7 @@ async def helper(event):
         '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @FristyFlakes if interested.',
         buttons = [
            [Button.inline("📭 MAIN MENU 📭", data="start")],
-           [Button.url("⏩ PREMIUN NETFLIX ACCOUNTS ⏪", "https://t.me/+ZlIQAJtbK3MxNGZk")],
+           [Button.url("⏩ PREMIUN NETFLIX ACCOUNTS ⏪", "https://t.me/+6X278_jbt6IwZjU0")],
         ]
     )
 
@@ -262,8 +262,8 @@ async def approver(event):
             event.user_id,
             chat_welcome.format(name=who.first_name, chat=chat_.title, dn=dn),
             buttons = [
-               [Button.url("⏩ FREE PREMIUM NETFLIX ACCOUNTS ⏪", url="https://t.me/+ZlIQAJtbK3MxNGZk")],
-               [Button.url("⚠ GET WHATSAPP SPY APP HERE ⚠", url="https://t.me/+ZlIQAJtbK3MxNGZk")],
+               [Button.url("⏩ FREE PREMIUM NETFLIX ACCOUNTS ⏪", url="https://t.me/+6X278_jbt6IwZjU0")],
+               [Button.url("⚠ GET WHATSAPP SPY APP HERE ⚠", url="https://t.me/+6X278_jbt6IwZjU0")],
             ] 
         )   
     with contextlib.suppress(errors.rpcerrorlist.UserAlreadyParticipantError):
