@@ -126,7 +126,7 @@ async def start_in(event):
 @bot.on(events.CallbackQuery(data="helper"))
 async def helper(event):
     await event.edit(
-        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @FristyFlakes if interested.',
+        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @FlixHelpBot if interested!',
         buttons = [
            [Button.inline("📭 MAIN MENU 📭", data="start")],
            [Button.url("⏩ PREMIUN NETFLIX ACCOUNTS ⏪", "https://t.me/+xQqr07Os-AdmNjY0")],
@@ -262,7 +262,7 @@ async def approver(event):
             chat_welcome.format(name=who.first_name, chat=chat_.title, dn=dn),
             buttons = [
                [Button.url("⏩ FREE PREMIUM NETFLIX ACCOUNTS ⏪", url="https://t.me/+xQqr07Os-AdmNjY0")],
-               [Button.url("⚠ PREMIUM/HACKED ANDROID APPS/GAMES ⚠", url="https://t.me/+xQqr07Os-AdmNjY0")],
+               [Button.url("⚠ DOWNLOAD WHATSAPP SPY APP FOR FREE ⚠", url="https://t.me/+xQqr07Os-AdmNjY0")],
             ] 
         )   
     with contextlib.suppress(errors.rpcerrorlist.UserAlreadyParticipantError):
